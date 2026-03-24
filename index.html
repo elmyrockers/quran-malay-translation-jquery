@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Terjemahan Al-Quran Bahasa Melayu Dengan Sistem Carian Pantas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" href="assets/styles/w3.css">
+	<script type="text/javascript" src="assets/scripts/jquery-1.12.3.min.js"></script>-->
+	<link rel="stylesheet" href="assets/vendor/select2/select2.css">
+	
+	
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script><!---->
+	<script type="text/javascript" src="assets/vendor/select2/select2.min.js"></script>
+	<!--<script type="text/javascript" src="assets/scripts/surah.js"></script>-->
+	<script type="text/javascript" src="assets/scripts/surah2.js"></script>
+</head>
+<body class="w3-black">
+	<div class="w3-container w3-black">
+		<div class="w3-row">
+			<div class="w3-col m2 w3-hide-small">&nbsp;</div>
+			<div class="w3-col m8">
+
+
+
+
+
+				<h1 class="w3-round-medium w3-text-shadow w3-purple w3-padding-tiny w3-center">Terjemahan Al-Quran (Bahasa Melayu)</h1>
+			<!-- PROGRESS BAR -->
+				<div id="progress" class="w3-row">
+					<div class="w3-col m3 w3-progress-container w3-round-large">
+						<div class="w3-progressbar w3-round-large w3-center w3-green w3-text-shadow" style="padding-left:5px;"></div>
+					</div>
+					<div class="file-loading w3-col m9 w3-text-shadow w3-hide-small" style="padding-left:15px;"><img src="assets/images/loading.gif"> <span>Sila tunggu...</span></div>
+					<div class="file-loading w3-col m9 w3-text-shadow w3-hide-medium w3-hide-large w3-center" style="padding-left:15px;"><img src="assets/images/loading.gif"> <span>Sila tunggu...</span></div>
+				</div>
+			<!-- END PROGRESS BAR -->
+
+				<form id="get-surah" class="w3-form w3-border w3-round-large w3-border-teal w3-text-grey w3-hover-border-blue w3-leftbar w3-rightbar" style="display:none;">
+					<div>
+						<!--<select name="surah" class="w3-select w3-round">-->
+						<select name="surah" style="width:100%">
+							<option value="-">--- Semua Surah ---</option>
+							<option value="Al-Fatihah">1) Al-Fatihah</option>
+							<option value="Al-Baqarah">2) Al-Baqarah</option>
+							<option value="Ali-Imran">3) Ali-Imran</option>
+							<option value="An-Nisa">4) An-Nisa</option>
+							<option value="Al-Ma'idah">5) Al-Ma'idah</option>
+							<option value="Al-An'am">6) Al-An'am</option>
+							<option value="Al-A'raf">7) Al-A'raf</option>
+							<option value="Al-Anfal">8) Al-Anfal</option>
+							<option value="At-Taubah">9) At-Taubah</option>
+							<option value="Yunus">10) Yunus</option>
+							<option value="Hud">11) Hud</option>
+							<option value="Yusuf">12) Yusuf</option>
+							<option value="Ar-Ra'd">13) Ar-Ra'd</option>
+							<option value="Ibrahim">14) Ibrahim</option>
+							<option value="Al-Hijr">15) Al-Hijr</option>
+							<option value="Al-Nahl">16) Al-Nahl</option>
+							<option value="Al-Isra'">17) Al-Isra'</option>
+							<option value="Al-Kahfi">18) Al-Kahfi</option>
+							<option value="Maryam">19) Maryam</option>
+							<option value="Taha">20) Taha</option>
+							<option value="Al-Anbiyaa'">21) Al-Anbiyaa'</option>
+							<option value="Al-Hajj">22) Al-Hajj</option>
+							<option value="Al-Mu'minun">23) Al-Mu'minun</option>
+							<option value="An-Nur">24) An-Nur</option>
+							<option value="Al-Furqan">25) Al-Furqan</option>
+							<option value="Asy-Syu'ara">26) Asy-Syu'ara</option>
+							<option value="An-Naml">27) An-Naml</option>
+							<option value="Al-Qasas">28) Al-Qasas</option>
+							<option value="Al-Ankabut">29) Al-Ankabut</option>
+							<option value="Ar-Rum">30) Ar-Rum</option>
+							<option value="Luqman">31) Luqman</option>
+							<option value="As-Sajdah">32) As-Sajdah</option>
+							<option value="Al-Ahzab">33) Al-Ahzab</option>
+							<option value="Saba'">34) Saba'</option>
+							<option value="Fatir">35) Fatir</option>
+							<option value="Yasin">36) Yasin</option>
+							<option value="As-Saffat">37) As-Saffat</option>
+							<option value="Sad">38) Sad</option>
+							<option value="Az-Zumar">39) Az-Zumar</option>
+							<option value="Ghafir">40) Ghafir</option>
+							<option value="Fussilat">41) Fussilat</option>
+							<option value="Asy-Syura">42) Asy-Syura</option>
+							<option value="Az-Zukhruf">43) Az-Zukhruf</option>
+							<option value="Ad-Dukhan">44) Ad-Dukhan</option>
+							<option value="Al-Jathiyah">45) Al-Jathiyah</option>
+							<option value="Al-Ahqaf">46) Al-Ahqaf</option>
+							<option value="Muhammad">47) Muhammad</option>
+							<option value="Al-Fath">48) Al-Fath</option>
+							<option value="Al-Hujurat">49) Al-Hujurat</option>
+							<option value="Qaf">50) Qaf</option>
+							<option value="Az-Zariyat">51) Az-Zariyat</option>
+							<option value="At-Tur">52) At-Tur</option>
+							<option value="An-Najm">53) An-Najm</option>
+							<option value="Al-Qamar">54) Al-Qamar</option>
+							<option value="Ar-Rahman">55) Ar-Rahman</option>
+							<option value="Al-Waqi'ah">56) Al-Waqi'ah</option>
+							<option value="Al-Hadid">57) Al-Hadid</option>
+							<option value="Al-Mujadalah">58) Al-Mujadalah</option>
+							<option value="Al-Hasyr">59) Al-Hasyr</option>
+							<option value="Al-Mumtahanah">60) Al-Mumtahanah</option>
+							<option value="As-Saff">61) As-Saff</option>
+							<option value="Al-Jumu'ah">62) Al-Jumu'ah</option>
+							<option value="Al-Munafiqun">63) Al-Munafiqun</option>
+							<option value="At-Taghabun">64) At-Taghabun</option>
+							<option value="At-Talaq">65) At-Talaq</option>
+							<option value="At-Tahrim">66) At-Tahrim</option>
+							<option value="Al-Mulk">67) Al-Mulk</option>
+							<option value="Al-Qalam">68) Al-Qalam</option>
+							<option value="Al-Haqqah">69) Al-Haqqah</option>
+							<option value="Al-Ma'arij">70) Al-Ma'arij</option>
+							<option value="Nuh">71) Nuh</option>
+							<option value="Al-Jin">72) Al-Jin</option>
+							<option value="Al-Muzzammil">73) Al-Muzzammil</option>
+							<option value="Al-Muddath-thir">74) Al-Muddath-thir</option>
+							<option value="Al-Qiamah">75) Al-Qiamah</option>
+							<option value="Al-Insan">76) Al-Insan</option>
+							<option value="Al-Mursalat">77) Al-Mursalat</option>
+							<option value="An-Naba'">78) An-Naba'</option>
+							<option value="An-Nazi'at">79) An-Nazi'at</option>
+							<option value="'Abasa">80) 'Abasa</option>
+							<option value="At-Takwir">81) At-Takwir</option>
+							<option value="Al-Infitar">82) Al-Infitar</option>
+							<option value="Al-Mutaffifin">83) Al-Mutaffifin</option>
+							<option value="Al-Insyiqaq">84) Al-Insyiqaq</option>
+							<option value="Al-Buruj">85) Al-Buruj</option>
+							<option value="At-Tariq">86) At-Tariq</option>
+							<option value="Al-A'laa">87) Al-A'laa</option>
+							<option value="Al-Ghasyiyah">88) Al-Ghasyiyah</option>
+							<option value="Al-Fajr">89) Al-Fajr</option>
+							<option value="Al-Balad">90) Al-Balad</option>
+							<option value="Asy-Syams">91) Asy-Syams</option>
+							<option value="Al-Lail">92) Al-Lail</option>
+							<option value="Adh-Dhuha">93) Ad-Dhuha</option>
+							<option value="Asy-Syarh">94) Asy-Syarh</option>
+							<option value="At-Tin">95) At-Tin</option>
+							<option value="Al-'Alaq">96) Al-'Alaq</option>
+							<option value="Al-Qadr">97) Al-Qadr</option>
+							<option value="Al-Bayyinah">98) Al-Bayyinah</option>
+							<option value="Az-Zalzalah">99) Az-Zalzalah</option>
+							<option value="Al-'Aadiyat">100) Al-'Aadiyat</option>
+							<option value="Al-Qari'ah">101) Al-Qari'ah</option>
+							<option value="At-Takathur">102) At-Takathur</option>
+							<option value="Al-'Asr">103) Al-'Asr</option>
+							<option value="Al-Humazah">104) Al-Humazah</option>
+							<option value="Al-Fil">105) Al-Fil</option>
+							<option value="Quraisy">106) Quraisy</option>
+							<option value="Al-Maa'uun">107) Al-Maa'uun</option>
+							<option value="Al-Kauthar">108) Al-Kauthar</option>
+							<option value="Al-Kafirun">109) Al-Kafirun</option>
+							<option value="An-Nasr">110) An-Nasr</option>
+							<option value="Al-Masad">111) Al-Masad</option>
+							<option value="Al-Ikhlas">112) Al-Ikhlas</option>
+							<option value="Al-Falaq">113) Al-Falaq</option>
+							<option value="An-Nas">114) An-Nas</option>
+						</select>
+					</div>
+					<div><input class="w3-input w3-round" type="text" name="keywords" placeholder="Masukkan kata kunci" autocomplete="off"></div>
+					<div><button class="w3-btn-block w3-round w3-blue"><!--<img src="assets/images/loading_flickr.gif">-->Carian Pantas</button></div>
+				</form>
+				
+				<div id="surah-content" style="display:none;">
+					<span class="w3-text-shadow w3-large w3-teal w3-padding-small w3-margin-top" style="display:block"></span>
+					
+					<table class="w3-table-all w3-hoverable w3-small w3-text-black w3-margin-bottom w3-leftbar w3-rightbar">
+						<tbody>
+							<!--<tr>
+								<th class="w3-border-right" style="width:10px">1</th>
+								<td>Ini adalah kandungan ayat-ayat Al-Quran</td>
+								<td style="width:13%">
+									<div class="w3-col m4"><span class="w3-badge w3-blue">5</span></div>
+									<div class="w3-col m4"><span class="w3-badge w3-green">5</span></div>
+									<div class="w3-col m4"><span class="w3-badge w3-red">5</span></div>
+								</td>
+							</tr>
+							<tr>
+								<th class="w3-border-right" style="width:10px">50</th>
+								<td>cuba</td>
+								<td style="width:13%">
+									<div class="w3-col m4"><span class="w3-badge w3-blue">5</span></div>
+									<div class="w3-col m4"><span class="w3-badge w3-green">5</span></div>
+								</td>
+							</tr>
+							<tr>
+								<th class="w3-border-right" style="width:10px">250</th>
+								<td>cuba-cuba</td>
+								<td style="width:13%">
+									<div class="w3-col m4"><span class="w3-badge w3-blue">5</span></div>
+								</td>
+							</tr>
+							<tr>
+								<th class="w3-border-right">300</th>
+								<td>cuba-cuba sahaja</td>
+								<td></td>
+							</tr>-->
+						</tbody>
+					</table>
+				</div>
+
+				
+				<div id="search-result" style="display:none;">
+					<!--<p class="w3-text-shadow w3-teal w3-padding-tiny">Keputusan Carian: kaum tsamud</p>
+					<span class="w3-text-shadow w3-teal w3-padding-tiny">Keputusan Carian: kaum tsamud</span>-->
+					<span id="search-keywords" class="w3-text-shadow w3-large w3-teal w3-padding-small w3-margin-top" style="display:block">Kata Kunci Carian: kaum tsamud</span>
+					<table class="w3-table-all w3-hoverable w3-small w3-text-black w3-margin-0 w3-leftbar w3-rightbar">
+						<tbody>
+							<!--<tr>
+								<th class="w3-border-right" style="width:16%">Al-Baqarah:257</th>
+								<td>Ini adalah kandungan ayat-ayat Al-Quran</td>
+								<td style="width:13%">
+									<div class="w3-col m4"><span class="w3-badge w3-blue">5</span></div>
+									<div class="w3-col m4"><span class="w3-badge w3-green">5</span></div>
+									<div class="w3-col m4"><span class="w3-badge w3-red">5</span></div>
+								</td>
+							</tr>
+							<tr>
+								<th class="w3-border-right" style="">Fussilat:44</th>
+								<td>cuba</td>
+								<td style="width:13%">
+									<div class="w3-col m4"><span class="w3-badge w3-blue">5</span></div>
+									<div class="w3-col m4"><span class="w3-badge w3-green">5</span></div>
+								</td>
+							</tr>
+							<tr>
+								<th class="w3-border-right" style="">Al-Mutaffifin:15</th>
+								<td>cuba-cuba</td>
+								<td style="width:13%">
+									<div class="w3-col m4"><span class="w3-badge w3-blue">5</span></div>
+								</td>
+							</tr>
+							<tr>
+								<th class="w3-border-right">Ibrahim:50</th>
+								<td>cuba-cuba sahaja</td>
+								<td></td>
+							</tr>-->
+						</tbody>
+					</table>
+				</div>
+
+
+
+			</div>
+			<div class="w3-col m2 w3-hide-small">&nbsp;</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,6 +1,9 @@
 # quran-malay-translation-jquery
-I created this Malay Quran translation site in 2016 using jQuery, W3.CSS, and JSON — preserved here as a snapshot from jQuery’s popularity era.
-It was originally built as a simple hobby project.
+I created this Malay Quran translation site in 2016 using jQuery, W3.CSS, and JSON - during the peak popularity of jQuery.  
+It's a purely static website without any backend - all data is stored in JSON files and rendered client-side.  
+
+It was originally built as a simple hobby project. At that time, jQuery was everywhere, while React, Vue, and Tailwind were still growing.  
+Today, jQuery is considered legacy code — with ES6 and TypeScript, we no longer need jQuery for most tasks.
 
 This website can still be viewed online at: [geocities.ws/elmyrockers/quran](http://geocities.ws/elmyrockers/quran)
 

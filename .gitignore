@@ -7,11 +7,11 @@ Thumbs.db
 .idea/
 *.swp
 
-# Node (if you ever add tooling later)
+# Node
 node_modules/
 npm-debug.log*
 
-# Build/Dist (if you generate assets later)
+# Build/Dist
 dist/
 build/
 

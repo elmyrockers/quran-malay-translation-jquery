@@ -1,5 +1,6 @@
 # quran-malay-translation-jquery
 I created this Malay Quran translation site in 2016 using jQuery, W3.CSS, and JSON — preserved here as a snapshot from jQuery’s popularity era.
+It was originally built as a simple hobby project.
 
 This website can still be viewed online at: [geocities.ws/elmyrockers/quran](http://geocities.ws/elmyrockers/quran)
 

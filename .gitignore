@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+# Node (if you ever add tooling later)
+node_modules/
+npm-debug.log*
+
+# Build/Dist (if you generate assets later)
+dist/
+build/
+
+# Exclude Quran JSON directory
+surah_in_json/
